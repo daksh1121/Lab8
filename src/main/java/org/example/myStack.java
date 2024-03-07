@@ -21,4 +21,12 @@ public class myStack<E> {
         delegate.remove(delegate.size() -1);
         return e;
     }
+
+    public boolean isEmpty() {
+        return delegate.isEmpty();
+    }
+
+    public int getSize() {
+        return delegate.size();
+    }
 }

@@ -48,4 +48,16 @@ public class AppTest
         assertEquals(7, stack.pop().intValue());
     }
 
+    public void testEmpty() {
+        myStack<Integer> stack = new myStack<>();
+        assertTrue(stack.isEmpty());
+    }
+
+    public void testSize() {
+        myStack<Integer> stack = new myStack<>();
+        stack.push(10);
+        stack.push(7);
+        stack.push(18);
+        assertEquals(3, stack.getSize());
+    }
 }
