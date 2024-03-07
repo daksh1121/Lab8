@@ -36,5 +36,9 @@ public class AppTest
         assertTrue( true );
     }
 
-
+    public void testPushPop() {
+        myStack<Integer> stack = new myStack<>();
+        stack.push(1);
+        assertEquals(1, stack.pop().intValue());
+    }
 }
