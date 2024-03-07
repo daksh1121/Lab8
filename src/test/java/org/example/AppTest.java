@@ -47,4 +47,5 @@ public class AppTest
         stack.push(7);
         assertEquals(7, stack.pop().intValue());
     }
+
 }
