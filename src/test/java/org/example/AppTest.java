@@ -41,4 +41,10 @@ public class AppTest
         stack.push(1);
         assertEquals(1, stack.pop().intValue());
     }
+
+    public void testPushPopWithDelegate() {
+        myStack<Integer> stack = new myStack<>();
+        stack.push(7);
+        assertEquals(7, stack.pop().intValue());
+    }
 }
